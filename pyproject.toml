@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keytab-creator"
+version = "1.0.0"
+dependencies = [
+    "impacket==0.9.24",
+    "setuptools-rust==1.1.1"
+]
+
+[tool.setuptools]
+py-modules=["keytab"]

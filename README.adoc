@@ -28,9 +28,17 @@ If the validation fails and an alternative salt is reported in the validation pr
 
 == Using in the command line
 
+Can be used as a standalone file:
 [source,shell]
 ----
 pip install --upgrade pip
 pip install -r requirements.txt
 python keytab.py --help
+----
+
+Or installed with pip and imported in python:
+[source,shell]
+----
+pip install git+https://github.com/samueljamesbader/keytab-creator.git
+python -c "import keytab; keytab.create_keytab('krb5.keytab','principal@DOMAIN','password')"
 ----
